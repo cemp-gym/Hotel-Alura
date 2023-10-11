@@ -50,7 +50,7 @@ public class MenuUsuario extends JFrame {
 	 * Create the frame.
 	 */
 	public MenuUsuario() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(MenuUsuario.class.getResource("/imagenes/aH-40px.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(MenuUsuario.class.getResource("/pe/com/hotelalura/imagenes/aH-40px.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 944, 609);
 		contentPane = new JPanel();
@@ -85,7 +85,7 @@ public class MenuUsuario extends JFrame {
 		JLabel lblNewLabel_2 = new JLabel("");
 		lblNewLabel_2.setBounds(50, 58, 150, 150);
 		panelMenu.add(lblNewLabel_2);
-		lblNewLabel_2.setIcon(new ImageIcon(MenuUsuario.class.getResource("/imagenes/aH-150px.png")));
+		lblNewLabel_2.setIcon(new ImageIcon(MenuUsuario.class.getResource("/pe/com/hotelalura/imagenes/aH-150px.png")));
 
 		JPanel btnRegReserva = new JPanel();
 		btnRegReserva.addMouseListener(new MouseAdapter() {
@@ -110,7 +110,7 @@ public class MenuUsuario extends JFrame {
 		btnRegReserva.setLayout(null);
 
 		labelRegReserva = new JLabel("Registro de reservas");
-		labelRegReserva.setIcon(new ImageIcon(MenuUsuario.class.getResource("/imagenes/reservado.png")));
+		labelRegReserva.setIcon(new ImageIcon(MenuUsuario.class.getResource("/pe/com/hotelalura/imagenes/reservado.png")));
 		labelRegReserva.setForeground(SystemColor.text);
 		labelRegReserva.setBounds(25, 11, 205, 34);
 		labelRegReserva.setFont(new Font("Roboto", Font.PLAIN, 18));
@@ -140,7 +140,7 @@ public class MenuUsuario extends JFrame {
 		btnBusqueda.setLayout(null);
 
 		JLabel lblBusquedaDeReservas = new JLabel("Búsqueda");
-		lblBusquedaDeReservas.setIcon(new ImageIcon(MenuUsuario.class.getResource("/imagenes/pessoas.png")));
+		lblBusquedaDeReservas.setIcon(new ImageIcon(MenuUsuario.class.getResource("/pe/com/hotelalura/imagenes/pessoas.png")));
 		lblBusquedaDeReservas.setBounds(27, 11, 200, 34);
 		lblBusquedaDeReservas.setHorizontalAlignment(SwingConstants.LEFT);
 		lblBusquedaDeReservas.setForeground(Color.WHITE);

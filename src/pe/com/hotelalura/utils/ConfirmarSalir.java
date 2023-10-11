@@ -39,7 +39,7 @@ public class ConfirmarSalir extends JDialog {
 	 * Create the dialog.
 	 */
 	public ConfirmarSalir() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(ConfirmarSalir.class.getResource("/imagenes/aH-40px.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(ConfirmarSalir.class.getResource("/pe/com/hotelalura/imagenes/aH-40px.png")));
 		setBounds(100, 100, 300, 226);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBackground(SystemColor.scrollbar);
@@ -49,7 +49,7 @@ public class ConfirmarSalir extends JDialog {
 		contentPanel.setLayout(null);
 		{
 			JLabel lblNewLabel = new JLabel("");
-			lblNewLabel.setIcon(new ImageIcon(ConfirmarSalir.class.getResource("/imagenes/Ha-100px.png")));
+			lblNewLabel.setIcon(new ImageIcon(ConfirmarSalir.class.getResource("/pe/com/hotelalura/imagenes/Ha-100px.png")));
 			lblNewLabel.setBounds(0, 11, 290, 100);
 			lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 			contentPanel.add(lblNewLabel);

@@ -49,7 +49,7 @@ public class HotelAlura extends JFrame {
 	public HotelAlura() {
 		
 		// Configura la ventana principal
-		setIconImage(Toolkit.getDefaultToolkit().getImage(HotelAlura.class.getResource("/imagenes/aH-40px.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(HotelAlura.class.getResource("/pe/com/hotelalura/imagenes/aH-40px.png")));
 		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		setBounds(100, 100, 910, 537);
 		contentPane = new JPanel();
@@ -70,13 +70,13 @@ public class HotelAlura extends JFrame {
 		// Configura la imagen de fondo izquierda
 		JLabel imagenFondo = new JLabel("");
 		imagenFondo.setBounds(-50, 0, 732, 501);
-		imagenFondo.setIcon(new ImageIcon(HotelAlura.class.getResource("/imagenes/menu-img.png")));
+		imagenFondo.setIcon(new ImageIcon(HotelAlura.class.getResource("/pe/com/hotelalura/imagenes/menu-img.png")));
 		panel.add(imagenFondo);
 		
 		// Configura la imagen de fondo derecha
 		JLabel logo = new JLabel("");
 		logo.setBounds(722, 80, 150, 156);
-		logo.setIcon(new ImageIcon(HotelAlura.class.getResource("/imagenes/aH-150px.png")));
+		logo.setIcon(new ImageIcon(HotelAlura.class.getResource("/pe/com/hotelalura/imagenes/aH-150px.png")));
 		panel.add(logo);
 		
 		// Configura la barra inferior
@@ -144,6 +144,7 @@ public class HotelAlura extends JFrame {
 		labelExit.setForeground(Color.black);
 		labelExit.setHorizontalAlignment(SwingConstants.CENTER);
 		labelExit.setFont(new Font("Humanst521 Lt BT", Font.BOLD, 18));
+		labelExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 		btnexit.add(labelExit);
 		
 		// Botón Login
@@ -167,7 +168,7 @@ public class HotelAlura extends JFrame {
 		imagenLogin.setBounds(0, 0, 80, 70);
 		btnLogin.add(imagenLogin);
 		imagenLogin.setHorizontalAlignment(SwingConstants.CENTER);
-		imagenLogin.setIcon(new ImageIcon(HotelAlura.class.getResource("/imagenes/login.png")));
+		imagenLogin.setIcon(new ImageIcon(HotelAlura.class.getResource("/pe/com/hotelalura/imagenes/login.png")));
 		
 		JLabel lblTitulo = new JLabel("LOGIN");
 		lblTitulo.setBounds(754, 265, 83, 24);

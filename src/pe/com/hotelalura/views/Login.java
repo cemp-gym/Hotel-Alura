@@ -80,39 +80,7 @@ public class Login extends JFrame {
 		JLabel imgHotel = new JLabel("");
 		imgHotel.setBounds(0, 0, 304, 538);
 		panel_1.add(imgHotel);
-		imgHotel.setIcon(new ImageIcon(Login.class.getResource("/imagenes/img-hotel-login-.png")));
-
-		JPanel btnexit = new JPanel();
-		btnexit.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				ConfirmarSalir confirmarSalir = new ConfirmarSalir();
-				confirmarSalir.setVisible(true);
-			}
-			@Override
-			public void mouseEntered(MouseEvent e) {
-				btnexit.setToolTipText("Salir");
-				btnexit.setBackground(Color.red);
-				labelExit.setForeground(Color.white);
-			}			
-			@Override
-			public void mouseExited(MouseEvent e) {
-				btnexit.setBackground(new Color(12, 138, 199));
-				labelExit.setForeground(Color.white);
-			}
-		});
-		btnexit.setLayout(null);
-		btnexit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-		btnexit.setBackground(new Color(12, 138, 199));
-		btnexit.setBounds(251, 0, 53, 36);
-		panel_1.add(btnexit);
-
-		labelExit = new JLabel("X");
-		labelExit.setBounds(0, 0, 53, 36);
-		btnexit.add(labelExit);
-		labelExit.setForeground(SystemColor.text);
-		labelExit.setFont(new Font("Humanst521 Lt BT", Font.BOLD, 18));
-		labelExit.setHorizontalAlignment(SwingConstants.CENTER);		
+		imgHotel.setIcon(new ImageIcon(Login.class.getResource("/pe/com/hotelalura/imagenes/img-hotel-login-.png")));
 
 		txtUsuario = new JTextField();
 		txtUsuario.addMouseListener(new MouseAdapter() {
@@ -218,7 +186,7 @@ public class Login extends JFrame {
 
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1.setIcon(new ImageIcon(Login.class.getResource("/imagenes/lOGO-50PX.png")));
+		lblNewLabel_1.setIcon(new ImageIcon(Login.class.getResource("/pe/com/hotelalura/imagenes/lOGO-50PX.png")));
 		lblNewLabel_1.setBounds(65, 65, 48, 59);
 		panel.add(lblNewLabel_1);
 
@@ -239,6 +207,41 @@ public class Login extends JFrame {
 		header.setBounds(0, 0, 784, 36);
 		panel.add(header);
 		header.setLayout(null);
+		
+		// Botón Salir
+		JPanel btnexit = new JPanel();
+		btnexit.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				ConfirmarSalir confirmarSalir = new ConfirmarSalir();
+				confirmarSalir.setVisible(true);
+			}
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				btnexit.setToolTipText("Salir");
+				btnexit.setBackground(Color.red);
+				labelExit.setForeground(Color.white);
+			}			
+			@Override
+			public void mouseExited(MouseEvent e) {
+				btnexit.setBackground(new Color(12, 138, 199));
+				labelExit.setForeground(Color.white);
+			}
+		});
+		btnexit.setLayout(null);
+		btnexit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		btnexit.setBackground(new Color(12, 138, 199));
+		btnexit.setBounds(251, 0, 53, 36);
+		panel_1.add(btnexit);
+
+		labelExit = new JLabel("X");
+		labelExit.setBounds(0, 0, 53, 36);
+		labelExit.setForeground(Color.white);
+		labelExit.setFont(new Font("Humanst521 Lt BT", Font.BOLD, 18));
+		labelExit.setHorizontalAlignment(SwingConstants.CENTER);
+		labelExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		btnexit.add(labelExit);
+				
 	}
 
 	private void headerMousePressed(java.awt.event.MouseEvent evt) {

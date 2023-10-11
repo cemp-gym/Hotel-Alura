@@ -72,7 +72,7 @@ public class ReservasView extends JFrame {
 	public ReservasView() {
 		super("Reserva");
 		this.reservaController = new ReservaController();
-		setIconImage(Toolkit.getDefaultToolkit().getImage(ReservasView.class.getResource("/imagenes/aH-40px.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(ReservasView.class.getResource("/pe/com/hotelalura/imagenes/aH-40px.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 910, 560);
 		setResizable(false);
@@ -112,7 +112,7 @@ public class ReservasView extends JFrame {
 		
 		txtFechaE = new JDateChooser();
 		txtFechaE.getCalendarButton().setBackground(SystemColor.textHighlight);
-		txtFechaE.getCalendarButton().setIcon(new ImageIcon(ReservasView.class.getResource("/imagenes/icon-reservas.png")));
+		txtFechaE.getCalendarButton().setIcon(new ImageIcon(ReservasView.class.getResource("/pe/com/hotelalura/imagenes/icon-reservas.png")));
 		txtFechaE.getCalendarButton().setFont(new Font("Roboto", Font.PLAIN, 12));
 		txtFechaE.setBounds(68, 161, 289, 35);
 		txtFechaE.getCalendarButton().setBounds(268, 0, 21, 33);
@@ -142,7 +142,7 @@ public class ReservasView extends JFrame {
 		panel.add(lblCheckOut);
 		
 		txtFechaS = new JDateChooser();
-		txtFechaS.getCalendarButton().setIcon(new ImageIcon(ReservasView.class.getResource("/imagenes/icon-reservas.png")));
+		txtFechaS.getCalendarButton().setIcon(new ImageIcon(ReservasView.class.getResource("/pe/com/hotelalura/imagenes/icon-reservas.png")));
 		txtFechaS.getCalendarButton().setFont(new Font("Roboto", Font.PLAIN, 11));
 		txtFechaS.setBounds(68, 246, 289, 35);
 		txtFechaS.getCalendarButton().setBounds(267, 1, 21, 31);
@@ -205,13 +205,13 @@ public class ReservasView extends JFrame {
 		JLabel logo = new JLabel("");
 		logo.setBounds(197, 68, 104, 107);
 		panel_1.add(logo);
-		logo.setIcon(new ImageIcon(ReservasView.class.getResource("/imagenes/Ha-100px.png")));
+		logo.setIcon(new ImageIcon(ReservasView.class.getResource("/pe/com/hotelalura/imagenes/Ha-100px.png")));
 		
 		JLabel imagenFondo = new JLabel("");
 		imagenFondo.setBounds(0, 140, 500, 409);
 		panel_1.add(imagenFondo);
 		imagenFondo.setBackground(Color.WHITE);
-		imagenFondo.setIcon(new ImageIcon(ReservasView.class.getResource("/imagenes/reservas-img-3.png")));
+		imagenFondo.setIcon(new ImageIcon(ReservasView.class.getResource("/pe/com/hotelalura/imagenes/reservas-img-3.png")));
 		
 		JPanel btnexit = new JPanel();
 		btnexit.addMouseListener(new MouseAdapter() {
@@ -321,6 +321,7 @@ public class ReservasView extends JFrame {
 		lblSiguiente.setForeground(Color.WHITE);
 		lblSiguiente.setFont(new Font("Roboto", Font.PLAIN, 18));
 		lblSiguiente.setBounds(0, 0, 122, 35);
+		lblSiguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 		btnsiguiente.add(lblSiguiente);
 	}
 	

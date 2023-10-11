@@ -41,7 +41,7 @@ public class Exito extends JDialog {
 	 * Create the dialog.
 	 */
 	public Exito() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(Exito.class.getResource("/imagenes/aH-40px.png")));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(Exito.class.getResource("/pe/com/hotelalura/imagenes/aH-40px.png")));
 		setBounds(100, 100, 370, 226);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBackground(SystemColor.scrollbar);
@@ -51,7 +51,7 @@ public class Exito extends JDialog {
 		contentPanel.setLayout(null);
 		{
 			JLabel lblNewLabel = new JLabel("");
-			lblNewLabel.setIcon(new ImageIcon(Exito.class.getResource("/imagenes/Ha-100px.png")));
+			lblNewLabel.setIcon(new ImageIcon(Exito.class.getResource("/pe/com/hotelalura/imagenes/Ha-100px.png")));
 			lblNewLabel.setBounds(123, 11, 100, 100);
 			contentPanel.add(lblNewLabel);
 		}
